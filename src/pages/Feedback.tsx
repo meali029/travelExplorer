@@ -11,6 +11,7 @@ type FeedbackFormData = {
   rating: number;
   review: string;
   recommend: boolean;
+  avatar: string;
 };
 
 type FeedbackFormErrors = {
@@ -20,6 +21,7 @@ type FeedbackFormErrors = {
   travelDate?: string;
   rating?: string;
   review?: string;
+  avatar?: string;
 };
 
 // Sample testimonials data
@@ -103,7 +105,8 @@ const Feedback = () => {
     travelDate: '',
     rating: 0,
     review: '',
-    recommend: true
+    recommend: true,
+    avatar: '' 
   });
   
   const [errors, setErrors] = useState<FeedbackFormErrors>({});
@@ -190,20 +193,44 @@ const Feedback = () => {
   };
 
   // Handle form submission
+  useEffect(() => {
+    const savedTestimonials = JSON.parse(localStorage.getItem('testimonials') || '[]');
+    setDisplayedTestimonials([...testimonials, ...savedTestimonials]); // Merge existing and saved testimonials
+  }, []);
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+  
     if (!validateForm()) {
       return;
     }
-    
+  
     setIsSubmitting(true);
-    
+  
     try {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Success response
+  
+      // Create new review object
+      const newReview = {
+        id: Date.now(), // Use a unique timestamp ID
+        name: formData.name,
+        destination: formData.destination,
+        date: new Date().toISOString().split('T')[0],
+        rating: formData.rating,
+        review: formData.review,
+        recommend: formData.recommend,
+        avatar: formData.avatar ||  'https://cdn-icons-png.flaticon.com/512/3135/3135715.png' // New avatar URL
+      };
+  
+      // Retrieve existing testimonials from localStorage
+      const savedTestimonials = JSON.parse(localStorage.getItem('testimonials') || '[]');
+  
+      // Update testimonials list
+      const updatedTestimonials = [newReview, ...savedTestimonials];
+      setDisplayedTestimonials([...testimonials, ...updatedTestimonials]); // Ensure past testimonials remain
+      localStorage.setItem('testimonials', JSON.stringify(updatedTestimonials));
+  
       setSubmitStatus('success');
       setStatusMessage('Thank you for your feedback! Your review has been submitted successfully.');
       setFormData({
@@ -213,27 +240,28 @@ const Feedback = () => {
         travelDate: '',
         rating: 0,
         review: '',
-        recommend: true
+        recommend: true,
+        avatar: '' // New avatar URL
       });
-      
-      // Reset form after 5 seconds
+  
+      // Reset status after 5 seconds
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
-    } catch ( error ) { {
-      // Error handling
-      console.error('Error sending message:', error);
+    } catch (error) {
+      console.error('Error submitting feedback:', error);
       setSubmitStatus('error');
       setStatusMessage('There was an error submitting your feedback. Please try again later.');
-      
-      // Reset error state after 5 seconds
+  
+      // Reset status after 5 seconds
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
-    } }finally {
+    } finally {
       setIsSubmitting(false);
     }
   };
+  
 
   return (
     <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
@@ -701,7 +729,7 @@ const Feedback = () => {
               className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-6 py-3 rounded-lg transition-colors duration-300"
             >
               Contact Us
-            </a>
+            </a>  
           </div>
         </div>
       </section>
