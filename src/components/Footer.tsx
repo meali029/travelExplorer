@@ -62,19 +62,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Popular Destinations</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Bali, Indonesia</a>
+                <a href="/destinations" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Bali, Indonesia</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Paris, France</a>
+                <a href="/destinations" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Paris, France</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Santorini, Greece</a>
+                <a href="/destinations" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Santorini, Greece</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Tokyo, Japan</a>
+                <a href="/destinations" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Tokyo, Japan</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">New York, USA</a>
+                <a href="/destinations" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">New York, USA</a>
               </li>
             </ul>
           </div>
