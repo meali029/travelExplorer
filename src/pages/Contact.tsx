@@ -166,9 +166,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Our Location</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                123 Travel Street<br />
-                Adventure City, AC 12345<br />
-                United States
+                Doha Qatar
               </p>
             </motion.div>
 
@@ -184,9 +182,9 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Phone Numbers</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Main: +1 (555) 123-4567<br />
-                Support: +1 (555) 987-6543<br />
-                Toll-free: 1-800-TRAVEL-1
+                Main: +974 7106 7690<br />
+                Support: +974 8829 7246<br />
+                Toll-free: +974 1234 5678
               </p>
             </motion.div>
 
