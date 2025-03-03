@@ -359,9 +359,7 @@ const Destinations = () => {
                         <DollarSign className="h-4 w-4 mr-1" />
                         <span className="text-sm">{destination.price} Budget</span>
                       </div>
-                      <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300">
-                        View Details
-                      </button>
+                      
                     </div>
                   </div>
                 </motion.div>
