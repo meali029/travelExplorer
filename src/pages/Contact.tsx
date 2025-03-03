@@ -166,6 +166,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Our Location</h3>
               <p className="text-gray-600 dark:text-gray-300">
+                Ring Road <br/>
                 Doha Qatar
               </p>
             </motion.div>
