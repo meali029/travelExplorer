@@ -46,16 +46,16 @@ const testimonials = [
     recommend: true,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80'
   },
-  {
-    id: 3,
-    name: 'Emma Rodriguez',
-    destination: 'Machu Picchu, Peru',
-    date: '2024-02-10',
-    rating: 4,
-    review: 'The footer looks really clean and professional. I appreciated the quick links and contact info, but I think adding social media icons would make it even better. It’s the last part users see, and having those links handy would encourage more engagement.',
-    recommend: true,
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-  },
+  // {
+  //   id: 3,
+  //   name: 'Emma Rodriguez',
+  //   destination: 'Machu Picchu, Peru',
+  //   date: '2024-02-10',
+  //   rating: 4,
+  //   review: 'The footer looks really clean and professional. I appreciated the quick links and contact info, but I think adding social media icons would make it even better. It’s the last part users see, and having those links handy would encourage more engagement.',
+  //   recommend: true,
+  //   avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+  // },
   {
     id: 4,
     name: 'David Wilson',
@@ -66,16 +66,16 @@ const testimonials = [
     recommend: true,
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80'
   },
-  {
-    id: 5,
-    name: 'Aisha Patel',
-    destination: 'Bali, Indonesia',
-    date: '2023-12-05',
-    rating: 4,
-    review: 'The scrolling experience is smooth, and the site is visually appealing. One small suggestion: adding a "Back to Top" button would make it easier to return to the navbar after scrolling through long pages. Not a dealbreaker, but a helpful UX boost.',
-    recommend: true,
-    avatar: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80'
-  }
+  // {
+  //   id: 5,
+  //   name: 'Aisha Patel',
+  //   destination: 'Bali, Indonesia',
+  //   date: '2023-12-05',
+  //   rating: 4,
+  //   review: 'The scrolling experience is smooth, and the site is visually appealing. One small suggestion: adding a "Back to Top" button would make it easier to return to the navbar after scrolling through long pages. Not a dealbreaker, but a helpful UX boost.',
+  //   recommend: true,
+  //   avatar: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80'
+  // }
 ];
 
 // Popular destinations for the dropdown
