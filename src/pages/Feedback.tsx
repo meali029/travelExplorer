@@ -32,7 +32,7 @@ const testimonials = [
     destination: 'Santorini, Greece',
     date: '2024-04-15',
     rating: 5,
-    review: 'Our trip to Santorini was absolutely magical! The accommodations were perfect, and our guide Maria was incredibly knowledgeable about the history and culture. The sunset cruise was the highlight of our trip. TravelExplorer took care of every detail, making this the most stress-free vacation we\'ve ever had.',
+    review: 'It would be helpful to have a direct link to view the travel packages from the homepage, instead of having to go through the navigation menu. As a first-time user, I expected to see some kind of shortcut or button right away that would take me to what you’re offering.',
     recommend: true,
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80'
   },
@@ -42,7 +42,7 @@ const testimonials = [
     destination: 'Kyoto, Japan',
     date: '2024-03-22',
     rating: 5,
-    review: 'The cultural immersion experience in Kyoto exceeded all expectations. From the traditional tea ceremony to the guided tour of ancient temples, every activity was thoughtfully planned. Our guide Takashi was exceptional, providing insights that we would have missed on our own. The ryokan stay was authentic and comfortable.',
+    review: 'The gallery images are nice, but it would be better if we could click on them to see a larger version. Right now, they’re a bit small and I’d like to view them in more detail.',
     recommend: true,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80'
   },
@@ -52,7 +52,7 @@ const testimonials = [
     destination: 'Machu Picchu, Peru',
     date: '2024-02-10',
     rating: 4,
-    review: 'Hiking the Inca Trail to Machu Picchu was a life-changing experience. The views were breathtaking and our guide Carlos was passionate about Incan history. The only reason I\'m giving 4 stars instead of 5 is that the accommodations on the trail were more basic than expected, but I understand that\'s part of the authentic experience.',
+    review: 'The footer looks really clean and professional. I appreciated the quick links and contact info, but I think adding social media icons would make it even better. It’s the last part users see, and having those links handy would encourage more engagement.',
     recommend: true,
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
@@ -62,7 +62,7 @@ const testimonials = [
     destination: 'Safari in Tanzania',
     date: '2024-01-18',
     rating: 5,
-    review: 'The safari experience in Tanzania was beyond words. We saw the Big Five within the first two days! The luxury tented camps were comfortable yet authentic, and the staff went above and beyond to make our stay special. Our guide John had an incredible ability to spot animals and shared so much knowledge about wildlife conservation.',
+    review: 'I browsed the site on my phone and was pleasantly surprised by how responsive it is. The navbar turns into a slick hamburger menu, and all the content scales beautifully. Nothing felt squished or awkward. Clearly built with mobile users in mind!',
     recommend: true,
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80'
   },
@@ -72,7 +72,7 @@ const testimonials = [
     destination: 'Bali, Indonesia',
     date: '2023-12-05',
     rating: 4,
-    review: 'Our honeymoon in Bali was beautiful. The private villa with infinity pool overlooking the rice terraces was stunning. The cooking class and temple tours were highlights. The only improvement could have been better transportation between activities, as we experienced some delays. Overall, a wonderful experience that we\'ll cherish forever.',
+    review: 'The scrolling experience is smooth, and the site is visually appealing. One small suggestion: adding a "Back to Top" button would make it easier to return to the navbar after scrolling through long pages. Not a dealbreaker, but a helpful UX boost.',
     recommend: true,
     avatar: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80'
   }
