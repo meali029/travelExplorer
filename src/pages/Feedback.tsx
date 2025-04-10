@@ -535,7 +535,7 @@ const Feedback = () => {
             >
               <div className="sticky top-24">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                  Traveler Reviews
+                  User Reviews
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                   Read what other travelers have to say about their experiences with TravelExplorer.
