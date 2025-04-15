@@ -48,56 +48,71 @@ const blogs = [
 
 const Blog = () => {
   return (
-    <div className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-gray-900 dark:text-white mb-4"
-        >
-          Travel Blog
-        </motion.h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
-          Get inspired with travel stories, tips, and destination guides from around the globe.
-        </p>
+    <>
+      {/* Travel Blog Section */}
+      <section className="relative py-20 bg-blue-600 dark:bg-blue-800 transition-colors duration-300">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-800 dark:to-blue-600 opacity-90"></div>
+          <div className="absolute inset-0"
+            style={{
+              backgroundImage: "url('https://shellycalcagno.com/wp-content/uploads/2018/07/writing.jpg')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              mixBlendMode: 'overlay'
+            }}></div>
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl font-bold text-white mb-4"
+          >
+            Travel Blog
+          </motion.h2>
+          <p className="text-white/90 mb-12 max-w-2xl mx-auto">
+            Get inspired with travel stories, tips, and destination guides from around the globe.
+          </p>
+        </div>
+      </section>
 
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {blogs.map((blog, index) => (
-            <motion.div
-              key={blog.id}
-              whileHover={{ y: -8 }}
-              transition={{ duration: 0.3 }}
-              className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-colors duration-300"
-            >
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="w-full h-56 object-cover"
-              />
-              <div className="p-6">
-                <p className="text-sm text-blue-600 dark:text-blue-400 mb-2">{blog.date}</p>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  {blog.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">{blog.excerpt}</p>
-                <Link
+      {/* Blog Cards Section */}
+      <div className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            {blogs.map((blog, index) => (
+              <motion.div
+                key={blog.id}
+                whileHover={{ y: -8 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-colors duration-300"
+              >
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-56 object-cover"
+                />
+                <div className="p-6">
+                  <p className="text-sm text-blue-600 dark:text-blue-400 mb-2">{blog.date}</p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                    {blog.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">{blog.excerpt}</p>
+                  <Link
   to={`/blogdetail/${blog.id}`}
-  className="text-blue-600 dark:text-blue-400 font-semibold inline-block relative group"
+  className="inline-block text-center py-3 px-6 bg-blue-600 dark:bg-blue-400 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors duration-300 relative group"
 >
   Read more →
-  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-600 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+  
 </Link>
 
-
-
-
-              </div>
-            </motion.div>
-          ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
