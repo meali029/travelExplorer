@@ -53,13 +53,15 @@ const Blog = () => {
       <section className="relative py-20 bg-blue-600 dark:bg-blue-800 transition-colors duration-300">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-800 dark:to-blue-600 opacity-90"></div>
-          <div className="absolute inset-0"
+          <div
+            className="absolute inset-0"
             style={{
               backgroundImage: "url('https://shellycalcagno.com/wp-content/uploads/2018/07/writing.jpg')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              mixBlendMode: 'overlay'
-            }}></div>
+              mixBlendMode: 'overlay',
+            }}
+          ></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h2
@@ -80,7 +82,7 @@ const Blog = () => {
       <div className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
         <div className="max-w-7xl mx-auto text-center">
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {blogs.map((blog, index) => (
+            {blogs.map((blog) => (
               <motion.div
                 key={blog.id}
                 whileHover={{ y: -8 }}
@@ -99,13 +101,11 @@ const Blog = () => {
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{blog.excerpt}</p>
                   <Link
-  to={`/blogdetail/${blog.id}`}
-  className="inline-block text-center py-3 px-6 bg-blue-600 dark:bg-blue-400 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors duration-300 relative group"
->
-  Read more →
-  
-</Link>
-
+                    to={`/blogdetail/${blog.id}`}
+                    className="inline-block text-center py-3 px-6 bg-blue-600 dark:bg-blue-400 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors duration-300"
+                  >
+                    Read more →
+                  </Link>
                 </div>
               </motion.div>
             ))}
