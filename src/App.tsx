@@ -8,6 +8,8 @@ import Destinations from './pages/Destinations';
 import Packages from './pages/Packages';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import Blog from './blog/Blog';
+import BlogDetail from './blog/BlogDetail';
 import Feedback from './pages/Feedback';
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
               <Route path="/packages" element={<Packages />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/blog" element={<Blog/>}/>
+              <Route path="/blogdetail/:id" element={<BlogDetail/>}/>
               <Route path="/feedback" element={<Feedback />} />
             </Routes>
           </main>
